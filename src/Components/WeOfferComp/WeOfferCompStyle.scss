@@ -1,0 +1,29 @@
+.weOfferCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 10%;
+  h2 {
+    color: #ffffff;
+    font-size: 3.5rem;
+  }
+  .weOfferBrandImg {
+    margin-top: 65px;
+    width: 80vw;
+  }
+  .getRewardsImg {
+    margin-top: 105px;
+    width: 35vw;
+  }
+}
+@media (max-width: 750px) {
+  .weOfferCont {
+    h2 {
+      font-size: 1.75rem;
+    }
+    .getRewardsImg {
+      width: 60vw;
+    }
+  }
+}

@@ -1,13 +1,35 @@
+@font-face {
+  font-family: "Blinker";
+  src: local("Blinker"),
+    url("./fonts/blinker/Blinker-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),
+    url("./fonts/poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Blinker";
+}
+p,
+a,
+button,
+ul {
+  font-family: "Poppins";
+}
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */

@@ -1,0 +1,96 @@
+.navbarCont {
+  position: absolute;
+  width: 80%;
+  top: 0;
+  padding: 40px 10% 30px 10%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .chevronDown {
+    width: 1vw;
+  }
+  .navBarSubCont {
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    li a {
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+  }
+}
+.singleNavLink {
+  button {
+    border: none;
+    background-color: transparent;
+  }
+}
+.navbarBtn {
+  display: flex;
+  gap: 10px;
+  button {
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  :first-child {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  :last-child {
+    background-image: linear-gradient(to right, #8f13f7 0, #520a9a 100%);
+  }
+}
+.burgerIcon,
+#navCheckBox {
+  display: none;
+}
+@media (min-width: 1101px) {
+  .navbarBtn {
+    :first-child {
+      margin-left: 50px;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .navBtn {
+    border: none;
+    background-color: transparent;
+    img {
+      width: 20px;
+      // height: 20px;
+    }
+  }
+  .navbarCont {
+    justify-content: space-between;
+    .burgerIcon {
+      display: inline-block;
+    }
+    ul {
+      position: absolute;
+      width: 95%;
+      margin-left: 2.5%;
+      height: 0;
+      transition: all 0.3s ease-in;
+      top: 100px;
+      left: 0px;
+      background-image: linear-gradient(to right, #0e0f15 0, #531532 100%);
+      flex-direction: column;
+      overflow-y: hidden;
+    }
+    #navCheckBox:checked ~ ul {
+      height: 300px;
+      overflow-y: auto;
+      padding: 5px 0 5px 10px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.learnContainer {
+  padding: 50px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    #11151e 0%,
+    #250a17 50%,
+    #360d20 100%
+  );
+  p,
+  a {
+    color: #ffffff;
+  }
+  p {
+    font-size: 1.5rem;
+    width: 35%;
+  }
+  a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 60px;
+  }
+}
+@media (max-width: 750px) {
+  .learnContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    p {
+      width: 100%;
+    }
+  }
+}

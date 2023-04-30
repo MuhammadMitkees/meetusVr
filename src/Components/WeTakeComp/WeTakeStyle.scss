@@ -1,0 +1,41 @@
+.weTakeCont {
+  padding: 140px 10% 100px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h2,
+  p {
+    color: #ffffff;
+  }
+  h2 {
+    margin: 0;
+    font-size: 3rem;
+    text-align: center;
+  }
+  p {
+    width: 45vw;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .meetUsLogo {
+    margin-top: 20px;
+    width: 15vw;
+  }
+  .meetUsvrLogo {
+    margin-top: 40px;
+    width: 22vw;
+  }
+}
+@media (max-width: 750px) {
+  .weTakeCont {
+    // align-items: flex-start;
+    p {
+      width: 70vw;
+    }
+    .meetUsLogo,
+    .meetUsvrLogo {
+      width: 50vw;
+    }
+  }
+}
