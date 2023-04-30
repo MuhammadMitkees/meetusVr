@@ -1,13 +1,13 @@
 import React from "react";
-import "./VideoBgSectionStyle.scss";
+import styles from "./VideoBgSectionStyle.module.scss";
 import meetusHeading from "../../Images/meetusHeading.png";
 import Navbar from "../Navbar/Navbar";
 
 function VideoBgSection() {
   return (
     <header>
-      <div className="headerMainDiv">
-        <div data-ux="Block" className="vdieoBg">
+      <div className={styles.headerMainDiv}>
+        <div data-ux="Block" className={styles.vdieoBg}>
           <iframe
             data-ux="Embed"
             id="embed-iframe-16812"
@@ -16,10 +16,10 @@ function VideoBgSection() {
             allowFullScreen={true}
             loading="lazy"
             data-aid="HEADER_VIDEO_EMBED"
-            className="iframeVideo"
+            className={styles.iframeVideo}
           ></iframe>
         </div>
-        <div className="headerContentDiv">
+        <div className={styles.headerContentDiv}>
           <h1>
             <img src={meetusHeading} alt={"meetus logo"} />
           </h1>

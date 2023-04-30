@@ -1,9 +1,9 @@
 import React from "react";
 import spliterImg from "../../Images/spliterContainer.png";
-import "./SpliterCompStyle.scss";
+import styles from "./SpliterCompStyle.module.scss";
 function SpliterComp() {
   return (
-    <section className="SpliterCont">
+    <section className={styles.SpliterCont}>
       <img src={spliterImg} />
     </section>
   );

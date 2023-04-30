@@ -1,5 +1,5 @@
 import React from "react";
-import "./FooterStyle.scss";
+import styles from "./FooterStyle.module.scss";
 import FooterLinkData from "../../Constants/FooterLinkData";
 import meetusvrLogo2 from "../../Images/meetusvrLogo2.png";
 import twitterLogo from "../../Images/twitterIcon.png";
@@ -12,7 +12,7 @@ function Footer() {
   };
   const UlFooterComp = (props) => {
     return (
-      <ul className="ulFooterCont">
+      <ul className={styles.ulFooterCont}>
         {props.header}
         <li>
           <a href="#">{props.firstLink}</a>
@@ -30,20 +30,20 @@ function Footer() {
     );
   };
   return (
-    <footer className="footerCont">
-      <div className="footerMainDiv">
-        <div className="meetusFooter">
+    <footer className={styles.footerCont}>
+      <div className={styles.footerMainDiv}>
+        <div className={styles.meetusFooter}>
           <img
             src={meetusvrLogo2}
             alt="meetusvr Logo"
-            className="meetusvrLogoFooter"
+            className={styles.meetusvrLogoFooter}
           />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
             dictum aliquet accumsan porta lectus ridiculus in mattis. Netus
             sodales in volutpat ullamcorper amet adipiscing fermentum.
           </p>
-          <div className="footerSmLinks">
+          <div className={styles.footerSmLinks}>
             <FooterSmLinks src={twitterLogo} alt="twitter icon" />
             <FooterSmLinks src={fbIcon} alt="facebook icon" />
             <FooterSmLinks src={igIcon} alt="instagram icon" />
@@ -73,7 +73,7 @@ function Footer() {
         />
       </div>
 
-      <p className="footerCRightTxt">
+      <p className={styles.footerCRightTxt}>
         copyright © meetUsVR 2023 all right reserved
       </p>
     </footer>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./HomeMainBodyStyle.scss";
+import styles from "./HomeMainBodyStyle.module.scss";
 import EmpowerComponent from "../EmpowerComponent/EmpowerComponent";
 import SpliterComp from "../SpliterComp/SpliterComp";
 import WeOfferComp from "../WeOfferComp/WeOfferComp";
@@ -8,7 +8,7 @@ import ImgWithCapData from "../../Constants/ImgWithCapData";
 import WeTakeComp from "../WeTakeComp/WeTakeComp";
 function HomeMainBody() {
   return (
-    <div className="homeMainBodyCont">
+    <div className={styles.homeMainBodyCont}>
       <EmpowerComponent />
       <SpliterComp />
       <WeOfferComp />

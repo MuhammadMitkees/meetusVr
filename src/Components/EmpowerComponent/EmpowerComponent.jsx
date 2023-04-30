@@ -1,9 +1,9 @@
 import React from "react";
-import "./EmpowerComponentStyle.scss";
+import styles from "./EmpowerComponentStyle.module.scss";
 import empowerImg from "../../Images/empowerImg.png";
 function EmpowerComponent() {
   return (
-    <section className="empowerCont">
+    <section className={styles.empowerCont}>
       <h2>Empower your future with us </h2>
       <p>
         MeetusVR is an innovative way to help businesses reach their goals. The

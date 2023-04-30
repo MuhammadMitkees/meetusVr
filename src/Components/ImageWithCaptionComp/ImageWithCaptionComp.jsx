@@ -1,11 +1,11 @@
 import React from "react";
-import "./ImageWithCaptionStyle.scss";
+import styles from "./ImageWithCaptionStyle.module.scss";
 import arrowRight from "../../Images/arrowRight.png";
 function ImageWithCaptionComp(props) {
   return (
-    <section className="imgWithCapCont">
-      <div className="singleRowImgCap">
-        <div className="imgWithCapCap">
+    <section className={styles.imgWithCapCont}>
+      <div className={styles.singleRowImgCap}>
+        <div className={styles.imgWithCapCap}>
           <h4>{props.title1}</h4>
           <p>{props.desc1}</p>
           <a href="#">
@@ -15,9 +15,9 @@ function ImageWithCaptionComp(props) {
         </div>
         <img src={props.imgOneSrc} />
       </div>
-      <div className="singleRowImgCap">
+      <div className={styles.singleRowImgCap}>
         <img src={props.imgTwoSrc} />
-        <div className="imgWithCapCap">
+        <div className={styles.imgWithCapCap}>
           <h4>{props.title2}</h4>
           <p>{props.desc2}</p>
           <a href="#">
